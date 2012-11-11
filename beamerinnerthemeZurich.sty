@@ -1,0 +1,93 @@
+\mode<presentation>
+
+
+%-----------------------------------------------------------------------------
+% OPTIONS
+
+\DeclareOptionBeamer{bullet}{\def\beamer@Zurich@bullet{#1}}
+\DeclareOptionBeamer{shadow}[true]{\def\beamer@themerounded@shadow{#1}}
+\ExecuteOptionsBeamer{shadow=false}
+
+\ProcessOptionsBeamer
+
+%-----------------------------------------------------------------------------
+
+
+%-----------------------------------------------------------------------------
+% MARGINS
+
+\newlength{\beamer@Zurich@normalmargin}
+\setlength{\beamer@Zurich@normalmargin}{.06\paperwidth}
+\setbeamersize{text margin left=\beamer@Zurich@normalmargin}
+\setbeamersize{text margin right=\beamer@Zurich@normalmargin}
+\setlength\leftmargini{.6\beamer@Zurich@normalmargin}
+\setlength\leftmarginii{.6\beamer@Zurich@normalmargin}
+\setlength\leftmarginiii{.6\beamer@Zurich@normalmargin}
+
+%-----------------------------------------------------------------------------
+
+
+%-----------------------------------------------------------------------------
+% TITLE PAGE
+
+\defbeamertemplate*{title page normal}{Zurich theme}[1][]
+{
+  \vbox{}
+  \vfill
+  \begin{centering}
+    \begin{beamercolorbox}[wd=\paperwidth,sep=8pt,center,#1]{title page header}
+      \usebeamerfont{title}\inserttitle\par%
+      \ifx\insertsubtitle\@empty%
+      \else%
+        \vskip0.25em%
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+      \fi%     
+    \end{beamercolorbox}%
+    \vskip1em\par
+    \begin{beamercolorbox}[sep=8pt,center,#1]{author}
+      \usebeamerfont{author}\insertauthor
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=8pt,center,#1]{institute}
+      \usebeamerfont{institute}\insertinstitute
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[sep=8pt,center,#1]{date}
+      \usebeamerfont{date}\insertdate
+    \end{beamercolorbox}\vskip0.5em
+    {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+  \end{centering}
+  \vfill
+}
+%-----------------------------------------------------------------------------
+
+
+%-----------------------------------------------------------------------------
+% ITEMS
+
+\defbeamertemplate{itemize item}{squarealt}%
+{\tiny\raise.5ex\hbox{\donotcoloroutermaths$\blacksquare$}}
+\defbeamertemplate{itemize subitem}{squarealt}%
+{\tiny\raise.4ex\hbox{\donotcoloroutermaths$\square$}}
+\defbeamertemplate{itemize subsubitem}{squarealt}%
+{\tiny\raise.3ex\hbox{\donotcoloroutermaths$\blacksquare$}}
+% 
+\defbeamertemplate{itemize item}{circlealt}%
+{\small\raise.2ex\hbox{\donotcoloroutermaths$\bullet$}}
+\defbeamertemplate{itemize subitem}{circlealt}%
+{\small\raise.1ex\hbox{\donotcoloroutermaths$\circ$}}
+\defbeamertemplate{itemize subsubitem}{circlealt}%
+{\scriptsize\raise.1ex\hbox{\donotcoloroutermaths$\bullet$}}
+\setbeamertemplate{items}[circlealt]
+% 
+\def\circletext{circle}
+\ifx\beamer@Zurich@bullet\circletext
+  \setbeamertemplate{items}[circlealt]
+\else
+  \setbeamertemplate{items}[squarealt]
+\fi
+
+\setbeamertemplate{blocks}[rounded][shadow=\beamer@themerounded@shadow]
+%-----------------------------------------------------------------------------
+
+
+\mode<all>
+

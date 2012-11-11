@@ -1,0 +1,92 @@
+\documentclass[11 pt,t]{beamer}
+\usetheme[
+	bullet=circle,		% Other option: square
+	bigpagenumber,		% circled page number on lower right
+	topline=true,		% colored bar at the top of the frame 
+	]{Zurich}
+
+
+%-----------------------------------------------------------------------------
+% DOCUMENT PROPERTIES
+
+\author{Patrick Pletscher}
+\title{Zurich Beamer Template}
+
+%-----------------------------------------------------------------------------
+
+
+\begin{document}
+
+
+% ----------------------------------------------------------------------------
+\frame{
+
+\titlepage
+
+}
+% ----------------------------------------------------------------------------
+
+
+\section{Example}
+
+
+% ----------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Fonts}
+\framesubtitle{Handwriting}
+
+\begin{itemize}
+    \item Line 1.
+    \only<2->{
+    \item Line 2.\\
+        {\handwriting \textcolor{tangocolordarkchameleon}{Less formal} }
+    }
+    \only<3->{
+    \item Line 3.\\
+        {\handwriting \textcolor{tangocolordarkscarletred}{
+        Less formal, different color.} }
+    }
+\end{itemize}
+
+
+\end{frame}
+% ----------------------------------------------------------------------------
+
+
+% ----------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Blocks}
+
+\begin{block}{Standard Block}
+    This is a standard block.
+\end{block}
+
+\begin{exampleblock}{Example Block}
+    This is an example block.
+\end{exampleblock}
+
+\begin{alertblock}{Alert Block}
+    This is an alert block.
+\end{alertblock}
+
+
+
+\end{frame}
+% ----------------------------------------------------------------------------
+
+
+% ----------------------------------------------------------------------------
+\usebackgroundtemplate{
+   \includegraphics[width=\paperwidth,
+                    height=\paperheight]{aletsch}
+}
+\begin{frame}
+\ \\ \ \\
+\centering \Large \textcolor{white}{Questions?}
+
+\end{frame}
+\usebackgroundtemplate{}
+% ----------------------------------------------------------------------------
+
+
+\end{document}

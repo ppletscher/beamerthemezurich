@@ -1,0 +1,124 @@
+\mode<presentation>
+\ProcessOptionsBeamer
+
+
+% -----------------------------------------------------------------------------
+% TANGO COLORS
+
+% chameleon
+\definecolor{tangocolordarkchameleon}{HTML}{4E9A06}
+\definecolor{tangocolormediumchameleon}{HTML}{73D216}
+\definecolor{tangocolorlightchameleon}{HTML}{8AE234}
+
+% tango sky blue
+\definecolor{tangocolordarkskyblue}{HTML}{204A87}
+\definecolor{tangocolormediumskyblue}{HTML}{3465A4}
+\definecolor{tangocolorlightskyblue}{HTML}{729FCF}
+
+% tango plum
+\definecolor{tangocolordarkplum}{HTML}{5C3566}
+\definecolor{tangocolormediumplum}{HTML}{75507B}
+\definecolor{tangocolorlightplum}{HTML}{AD7FA8}
+
+% scarlet red
+\definecolor{tangocolordarkscarletred}{HTML}{A40000}
+\definecolor{tangocolormediumscarletred}{HTML}{CC0000}
+\definecolor{tangocolorlightscarletred}{HTML}{EF2929}
+
+% aluminium
+\definecolor{tangocolordarkaluminium}{HTML}{BABDB6}
+%\definecolor{tangocolormediumaluminium}{HTML}{D3D7CF}
+\definecolor{tangocolormediumaluminium}{HTML}{D3D3D3}
+\definecolor{tangocolorlightaluminium}{HTML}{EEEEEC}
+
+% gray
+\definecolor{tangocolorlightgray}{HTML}{888A85}
+
+% -----------------------------------------------------------------------------
+
+
+% -----------------------------------------------------------------------------
+% TODO: remove once colors are no longer used!!!
+% These are a few colors that I like.
+
+\definecolor{crimsonred}{RGB}{153,0,0}		% Neurtal red, good for dark or light bg
+\definecolor{darkcharcoal}{RGB}{25,25,25}		% Darker gray
+\definecolor{charcoal}{RGB}{51,51,51}		% Darker gray
+\definecolor{ash}{RGB}{100,100,100}			% medium gray
+\definecolor{paleblue}{RGB}{0,102,102}		% More of an `ocean' color
+\definecolor{turtlegreen}{RGB}{51,153,0}	% A more neutral green
+\definecolor{paleale}{RGB}{204,204,102}		% Only for dark BG
+\definecolor{lager}{RGB}{140,110,10}		% Use instead of pale ale for white BG
+\definecolor{regal}{RGB}{90,0,120}			% A more neutral purple
+\definecolor{jeans}{RGB}{20,30,150}			% A more neutral blue
+
+
+\definecolor{FlipSand}{RGB}{140,110,10}			% lager, Only for light BG
+\definecolor{FlipGreen}{RGB}{51,153,0}			% turtlegreen, works for both
+
+% -----------------------------------------------------------------------------
+
+
+% -----------------------------------------------------------------------------
+% COLORS OF MAIN ELEMENTS
+
+% Default to black on white
+\setbeamercolor*{footerlike}{fg=white,bg=black!30!tangocolordarkaluminium} % for gray footer
+\setbeamercolor{structure}{fg=tangocolordarkskyblue, bg=white} % fg controls bullets
+
+\setbeamercolor{alerted text}{fg=tangocolordarkscarletred}
+
+% -----------------------------------------------------------------------------
+
+
+
+% -----------------------------------------------------------------------------
+% BLOCK ENVIRONEMENTS
+
+\setbeamercolor{block title}{fg=white,bg=tangocolordarkskyblue}
+\setbeamercolor{block body}{bg=tangocolorlightskyblue!20!white,fg=black}
+
+\setbeamercolor{block title example}{fg=white,bg=tangocolordarkchameleon}
+\setbeamercolor{block body example}{bg=tangocolorlightchameleon!20!white,fg=black}
+
+\setbeamercolor{block title alerted}{fg=white,bg=tangocolordarkscarletred}
+\setbeamercolor{block body alerted}{bg=tangocolorlightscarletred!20!white,fg=black}
+
+% -----------------------------------------------------------------------------
+
+
+% -----------------------------------------------------------------------------
+% PALETTE COLORS
+
+
+% From the Beamer User Guide:
+% Outer themes base the color of navigational elements and, possibly, also of other elements, on the 
+% four palette colors. The “primary” palette should be used for the most important navigational elements, 
+% which are usually the ones that change most often and hence require the most attention by the audience. 
+% The “secondary” and “tertiary” are less important, the “quaternary” one is least important. 
+% By default, the palette colors do not have a background and the foreground ranges from structure.fg to black. 
+% For the sidebar, there is an extra set of palette colors, see palette sidebar primary.
+
+% TODO: review
+
+\setbeamercolor*{palette primary}{fg=tangocolordarkskyblue,bg=black!30!tangocolordarkaluminium}
+%\setbeamercolor*{palette secondary}{fg=paleale,bg=lager}
+%\setbeamercolor*{palette tertiary}{fg=turtlegreen,bg=jeans}
+%\setbeamercolor*{palette quaternary}{fg=paleblue,bg=regal}
+
+% -----------------------------------------------------------------------------
+
+
+% -----------------------------------------------------------------------------
+% OUTER THEME STRUCTURES
+
+% TODO: review
+
+\setbeamercolor*{crimsontown}{fg=paleblue,bg=crimsonred}
+\setbeamercolor*{titlelike}{fg=tangocolordarkskyblue}
+\setbeamercolor*{topbarlike}{fg=white, bg=charcoal}
+% -----------------------------------------------------------------------------
+
+
+\mode
+<all>

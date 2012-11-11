@@ -1,0 +1,52 @@
+\usepackage{appendixnumberbeamer}
+
+\mode<presentation>
+
+
+%% These are the options that are fed in through the driver file
+%% Some of them get passed on to the other theme files
+\DeclareOptionBeamer{bullet}{\PassOptionsToPackage{bullet=#1}{beamerinnerthemeZurich}}
+\DeclareOptionBeamer{bigpagenumber}{\PassOptionsToPackage{bigpagenumber}{beamerouterthemeZurich}}
+\DeclareOptionBeamer{topline}[true]{\PassOptionsToPackage{topline=#1}{beamerouterthemeZurich}}
+\DeclareOptionBeamer{shadow}[false]{\PassOptionsToPackage{shadow=#1}{beamerinnerthemeZurich}}
+
+\DeclareOptionBeamer{watermark}{\PassOptionsToPackage{watermark=#1}{beamerouterthemeZurich}}
+
+\ProcessOptionsBeamer
+
+\useinnertheme{Zurich}  % Calls beamerinnerthemeZurich.sty
+\useoutertheme{Zurich}  % Calls beamerouterthemeZurich.sty
+\usecolortheme{Zurich}  % Calls beamercolorthemeZurich.sty
+\usefonttheme{Zurich}   % Calls beamerfontthemeZurich.sty
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Background  Gradient %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% Usually I would leave this on
+%% However, there seems to be problems with XeLaTeX
+%% http://tex.stackexchange.com/questions/29497/xelatex-preventing-beamer-from-using-different-backgrounds
+\setbeamertemplate{background canvas}[vertical shading][bottom=blue!.1, middle=white, top=white]
+
+%% HOWEVER: it seems to make it impossible to change this later on in the document
+
+
+%% For a dark background: 
+% \setbeamertemplate{background canvas}[vertical shading][bottom=keynotebottom, middle=keynotemiddle, top=keynotetop]
+
+
+%% An alternate way: \beamertemplateshadingbackground{blue!.1}{red!2}
+%% In general: you want the gradient to be subtle!
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% Navigation  symbols %
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{navigation symbols}{} 	% Turns off PDF navigation symbols
+
+\mode<all>
+\endinput

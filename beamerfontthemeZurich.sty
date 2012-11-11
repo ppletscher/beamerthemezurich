@@ -1,0 +1,76 @@
+%-----------------------------------------------------------------------------
+% DEFAULT FONTS / INITIALIZATIONS
+
+% Default font: lmodern, doesn't require fontspec
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}			
+\usepackage{sfmath}		% Sans Serif Math, off by default
+
+% Protects fonts from Beamer screwing with them
+% http://tex.stackexchange.com/questions/10488/force-computer-modern-in-math-mode
+\usefonttheme{professionalfonts}
+
+% For advanced fonts: access local OS X fonts
+\usepackage[no-math]{fontspec}		
+% This template uses typical OS X and Adobe fonts
+\defaultfontfeatures{Mapping=tex-text}	% This seems to be important for mapping glyphs properly
+
+%-----------------------------------------------------------------------------
+
+
+%-----------------------------------------------------------------------------
+% MAIN FONT
+
+%% Helvetica
+%\setmainfont{Helvetica}		% Beamer ignores "main font" in favor of sans font
+%\setsansfont{Helvetica}     % This is the font that beamer will use by default
+%\setbeamerfont{title}{family=\fontspec{Helvetica}}
+
+% Gill Sans (alternative: "Gill Sans Light")
+\setmainfont{Gill Sans}		% Beamer ignores "main font" in favor of sans font
+\setsansfont{Gill Sans}     % This is the font that beamer will use by default
+\setbeamerfont{title}{family=\fontspec{Gill Sans}}
+%\newcommand{\forbold}{\fontspec{Helvetica}} % Gill Sans doesn't look very nice when boldfaced
+
+%% Myriad Pro
+%\setmainfont{Myriad Pro}  % Beamer ignores "main font" in favor of sans font
+%\setsansfont{Myriad Pro}  % This is the font that beamer will use by default
+%\setbeamerfont{title}{family=\fontspec{Myriad Pro}}
+
+%% Linux Biolinum
+%\setmainfont{Linux Biolinum}   % Beamer ignores "main font" in favor of sans font
+%\setsansfont{Linux Biolinum}   % This is the font that beamer will use by default
+%\setbeamerfont{title}{family=\fontspec{Linux Biolinum}}
+
+%% Linux Libertine
+%\setmainfont{Linux Libertine}   % Beamer ignores "main font" in favor of sans font
+%\setsansfont{Linux Libertine}   % This is the font that beamer will use by default
+%\setbeamerfont{title}{family=\fontspec{Linux Libertine}}
+
+%% Adobe Garamond
+%\setmainfont{Adobe Garamond Pro}   % Beamer ignores "main font" in favor of sans font
+%\setsansfont{Adobe Garamond Pro}	% This is the font that beamer will use by default
+%\setbeamerfont{title}{family=\fontspec{Adobe Garamond Pro}}
+
+%% Frutiger
+%\setmainfont{Frutiger LT Std}  % Beamer ignores "main font" in favor of sans font
+%\setsansfont{Frutiger LT Std}	% This is the font that beamer will use by default
+%\setbeamerfont{title}{family=\fontspec{Frutiger LT Std}}
+
+%% Avenir
+%\setmainfont{Avenir}  % Beamer ignores "main font" in favor of sans font
+%\setsansfont{Avenir}  % This is the font that beamer will use by default
+%\setbeamerfont{title}{family=\fontspec{Avenir}}
+
+
+%-----------------------------------------------------------------------------
+
+
+%-----------------------------------------------------------------------------
+% HANDWRITTEN STYLE
+
+% From Emerald City, free font
+\newcommand{\handwriting}{\fontspec{augie}}
+% \newcommand{\handwriting}{} % if you prefer no special handwriting font or don't have augie
+
+%-----------------------------------------------------------------------------
