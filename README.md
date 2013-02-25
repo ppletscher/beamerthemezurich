@@ -10,8 +10,8 @@ and I mainly changed the main colors from to red to blue.
 
 1. Install XeLaTeX and latexmk (not really required).
 2. Clone the git repository from github `git clone git@github.com:ppletscher/beamerthemeposterzurich.git`.
-3. run `make` to compile the example_talk.
-4. If you like the theme, simply copy the following files
+3. run `make` to compile the file `example_talk.tex`.
+4. If you like the theme, simply copy the files
 `appendixnumberbeamer.sty`,
 `beamercolorthemeZurich.sty`, `beamerfontthemeZurich.sty`,
 `beamerinnerthemeZurich.sty`, `beamerouterthemeZurich.sty` and
