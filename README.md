@@ -6,7 +6,7 @@ class for creating presentations. The theme is heavily based on the excellent
 [Flip Beamer template](http://www.lepp.cornell.edu/~pt267/files/code/FlipBeamerTemplate.pdf)
 and I mainly changed the main colors from to red to blue. 
 
-![Example slide](http://pletscher.org/assets/img/pletscher2012thesis-talk.png)
+![Example slide](http://pletscher.org/assets/img/pletscher2012thesis-talk_small.png)
 
 
 ## Installation
