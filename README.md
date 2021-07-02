@@ -12,7 +12,7 @@ and I mainly changed the main colors from to red to blue.
 ## Installation
 
 1. Install XeLaTeX and latexmk (not really required).
-2. Clone the git repository from github `git clone git@github.com:ppletscher/beamerthemeposterzurich.git`.
+2. Clone the git repository from github `git clone git@github.com:ppletscher/beamerthemezurich.git`.
 3. run `make` to compile the file `example_talk.tex`.
 4. If you like the theme, simply copy the files
 `appendixnumberbeamer.sty`,
